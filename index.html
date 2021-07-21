@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 變換css file -->
+    <link id='mode' rel="stylesheet" type="text/css" href="light.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class='card'>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_.jpg">
+        <div class="text">
+            <h1>John Wick</h1>
+            <p></p>
+            <p>Pet Lover</p>
+        </div>
+        <div class="btn-box">
+            <!-- 當按下按鈕時 -->
+            <button onclick="changeColor('light.css')">Light</button>
+            <button onclick="changeColor('dark.css')">Dark</button>
+        </div>
+    </div>
+
+
+    <!-- 定義換css file 的函數 -->
+    <script type="text/javascript">
+        const changeColor = (file) => {
+            document.getElementById('mode').href = file
+        }
+    </script>
+
+
+
+</body>
+</html>
